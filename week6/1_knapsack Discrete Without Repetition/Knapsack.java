@@ -6,19 +6,6 @@ public class Knapsack {
         //write you code here
         int result = 0;
         int [][] arr = new int [w.length+1][W+1];
-        
-        /**
-        //USELESS LINES
-        
-        //filling first row in zeros
-        for (int i = 0; i < arr[0].length; i++) {
-            arr[0][i]=0;
-        }
-        //filling first column in zeros
-        for (int i = 0; i < arr.length; i++) {
-            arr[i][0]=0;
-        }
-        **/
         int rowWeight = -1;
         for (int i = 1; i < arr.length; i++) {
             rowWeight=w[i-1];
